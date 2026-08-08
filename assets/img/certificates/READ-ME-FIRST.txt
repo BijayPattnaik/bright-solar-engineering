@@ -1,0 +1,34 @@
+PUT YOUR DEALERSHIP CERTIFICATES IN THIS FOLDER
+===============================================
+
+Scans or clear photos of your authorisation letters from
+Waaree and V-Guard.
+
+Anyone can type "authorised dealer" on a website. Showing the
+actual paperwork is what separates you from the people who
+just claim it.
+
+HOW TO ADD THEM
+---------------
+1. Copy the scans into this folder:
+     waaree.jpg, vguard.jpg
+
+2. Open  assets/js/config.js  and find the "credentials" section.
+   Remove the // and edit:
+
+     items: [
+       { src: 'assets/img/certificates/waaree.jpg',
+         alt: 'Waaree authorised dealer certificate',
+         label: 'Waaree Energies' },
+     ]
+
+3. Save. The section appears on the About page.
+
+Until you add at least one, the section stays hidden.
+
+BEFORE YOU UPLOAD - CHECK EACH SCAN
+-----------------------------------
+These go on a public website. Look at each one and cover or blur
+anything you do not want public, such as bank account numbers or
+personal ID numbers. Your firm name, the brand, the dealership
+period and the signature are the parts that matter.

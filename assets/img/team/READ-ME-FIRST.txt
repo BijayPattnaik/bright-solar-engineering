@@ -1,0 +1,82 @@
+PUT YOUR PHOTO IN THIS FOLDER
+=============================
+
+A real face matters on a local trade website. Someone spending a lakh
+or more on a 25-year product wants to see who they are buying from.
+
+HOW TO ADD IT
+-------------
+1. Copy your photo into this folder.
+   Name it simply, no spaces:   ardhendu-pattnaik.jpg
+
+2. Open  assets/js/config.js  and find the "team" section.
+   Remove the // in front of the example lines and edit them:
+
+     items: [
+       { src: 'assets/img/team/ardhendu-pattnaik.jpg',
+         alt: 'Ardhendu Pattnaik, Partner at Bright Solar Engineering',
+         name: 'Ardhendu Pattnaik',
+         role: 'Partner',
+         focus: '50% 20%',
+         line: 'The person who answers the phone and turns up for the survey.' },
+     ]
+
+3. Save. Done. The section appears on the About page.
+
+Until you add one, the whole section stays hidden - visitors never
+see an empty space or a broken image.
+
+
+BEST RESULT: CROP IT SQUARE FIRST
+---------------------------------
+The site crops your photo to a circle. If the original is a full
+standing shot, the circle ends up mostly shirt with a small face.
+
+Before saving, crop the photo to a SQUARE around the head and
+shoulders - top of the hair near the top edge, cut around chest
+level. Windows Photos does this in seconds: open the photo, click
+Crop, choose the 1:1 / Square ratio, drag, save.
+
+Do that and you can leave `focus` as it is.
+
+
+ABOUT THE BACKGROUND
+--------------------
+The photo is cropped to a CIRCLE at head-and-shoulders. That alone
+removes most of a busy shop background - shelving, boxes, stock - so
+in many cases you do not need to edit the photo at all. Try it first.
+
+If you do want the background removed properly, it takes 30 seconds
+and costs nothing:
+
+  - remove.bg           upload, download, done
+  - Canva               Edit image > Background Remover
+  - Microsoft Paint     Windows 11 has "Remove background" built in
+  - Photos app          Windows 11, right-click the subject
+
+Save the result as a PNG if the background is transparent, or put a
+plain white or light grey behind it. Either looks correct on the site.
+
+
+IF THE CROP LOOKS WRONG
+-----------------------
+Change the second number in `focus` in config.js. Only that one.
+
+  '50% 10%'   crop higher - use if there is too much space above the head
+  '50% 20%'   default - suits most head-and-shoulders photos
+  '50% 35%'   crop lower - use if the top of the head is cut off
+
+
+WHAT MAKES A GOOD PHOTO
+-----------------------
+- Head and shoulders, camera at eye level, not looking down at you
+- Face the camera squarely and hold the phone level
+- Daylight if possible - near a window or door, not under a tube light
+- Plain wall behind you if you can manage it
+- No flash if you can avoid it. Flash flattens the face and throws a
+  hard shadow onto the wall behind.
+- Ask someone else to take it. An arm's-length selfie distorts a face.
+
+Shown at 190px across, so any modern phone photo is more than enough.
+If the file is over about 2 MB, resize it so the site stays fast on
+mobile data.

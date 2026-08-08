@@ -1,0 +1,49 @@
+PUT YOUR INSTALLATION PHOTOS IN THIS FOLDER
+===========================================
+
+This is the single most valuable thing you can add to the website.
+Photos of real jobs convince people far more than any words on the page.
+
+HOW TO ADD THEM
+---------------
+1. Copy your photos into this folder.
+   Name them simply, no spaces:  pipili-3kw.jpg, puri-5kw-vguard.jpg
+
+2. Open  assets/js/config.js  and find the "gallery" section.
+   Remove the // in front of the example lines and edit them:
+
+     items: [
+       { src: 'assets/img/projects/pipili-3kw.jpg',
+         alt: '3 kW Waaree rooftop system in Pipili',
+         caption: '3 kW - Waaree Mono PERC - Pipili' },
+     ]
+
+3. Add one block like that for each photo. Save. Done.
+
+Until you add at least one, the whole section stays hidden -
+visitors never see an empty gallery.
+
+IMPORTANT - REMOVE LOCATION DATA FIRST
+--------------------------------------
+Your phone saves GPS coordinates inside every photo it takes. Put that
+photo on the website and a visitor can read the exact location - which
+for an installation photo is a customer's home address.
+
+Strip it before you publish. In Explorer:
+  right-click the file > Properties > Details >
+  "Remove Properties and Personal Information" > Create a copy
+
+Takes two seconds and it also cuts the file size.
+
+
+WHAT MAKES A GOOD PHOTO
+-----------------------
+- The finished array on the roof, whole array in frame
+- The inverter neatly mounted on the wall
+- You or your team actually working on site
+- A customer standing with their new meter (ask permission first)
+- Shoot in daylight. Hold the phone level. Avoid heavy shadows.
+
+Photos are shown 260px wide or larger. Anything from a modern phone
+is plenty. If a file is over about 2 MB, resize it so the site
+stays fast on mobile data.

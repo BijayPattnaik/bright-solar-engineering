@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 128" width="704" height="512" role="img" aria-label="Bright Solar Engineering — Harness the Sun, Empower the Future">
+  <title>Bright Solar Engineering — full lockup</title>
+  <!-- Brand: navy #0F2A6B · rust #C5512A · green #3F7D33 -->
+
+  <g transform="translate(7 0)">
+    <!-- Sun rays and disc -->
+    <g fill="#c5512a">
+      <polygon points="30.98,26.03 25.48,14.39 24.31,27.21"/>
+      <polygon points="23.86,27.42 13.28,20.08 18.67,31.77"/>
+      <polygon points="18.39,32.17 5.56,31.11 16.07,38.54"/>
+      <polygon points="16.03,39.02 4.40,44.51 17.21,45.69"/>
+      <polygon points="17.42,46.14 10.08,56.72 21.77,51.33"/>
+      <circle cx="30" cy="40" r="14"/>
+      <path d="M18 34C46 6 98 0 146 11C98 9 48 16 18 34Z"/>
+      <path d="M152 5l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z"/>
+    </g>
+
+    <!-- Green band -->
+    <path fill="#3f7d33" d="M102 62c14-4 30-4 41-1l-1 9c-12-3-26-3-41 1z"/>
+
+    <!-- Solar-panel "E" -->
+    <g transform="rotate(-5 123 40)">
+      <path d="M104 24h38v8h-25v6h22v8h-22v6h25v8h-38z" fill="#0f2a6b"/>
+      <path d="M116 24v32M128 24v8M128 46v10M104 35.6h13M104 44.4h13" stroke="#ffffff" stroke-width="1.3" fill="none" opacity=".85"/>
+    </g>
+
+    <!-- BS letterforms -->
+    <text x="36" y="61" fill="#0f2a6b"
+          font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="46" font-weight="800"
+          letter-spacing="-1.5" transform="translate(5.5 0) skewX(-6)">BS</text>
+  </g>
+
+  <!-- Wordmark — spelled correctly -->
+  <text x="88" y="98" fill="#0f2a6b" text-anchor="middle"
+        font-family="'Times New Roman', Georgia, serif" font-size="16.5" font-weight="700"
+        letter-spacing="0.2">BRIGHT SOLAR ENGINEERING</text>
+
+  <!-- Tagline -->
+  <text x="88" y="116" fill="#0f2a6b" text-anchor="middle"
+        font-family="'Times New Roman', Georgia, serif" font-size="11" font-style="italic">"Harness the Sun, Empower the Future."</text>
+</svg>
