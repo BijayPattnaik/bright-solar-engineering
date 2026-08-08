@@ -102,8 +102,12 @@ const SITE = {
       { icon: 'survey',  title: 'Free site survey and shadow study',
         text: 'We measure your shadow-free area across the whole day before quoting. Most dealers eyeball it from the gate.' },
 
-      { icon: 'doc',     title: 'Subsidy and discom paperwork at no charge', highlight: true,
-        text: 'Portal registration, discom application, feasibility follow-up, net meter and commissioning upload. Many installers charge ₹3,000–₹5,000 for this, or hand you the forms and wish you luck.' },
+      /* NOTE: we GUIDE, we do not file. The PM Surya Ghar subsidy is paid
+         straight into the consumer's own bank account, so the application
+         has to be in their name and made by them. Do not reword this into
+         "we handle your paperwork" — it is not what the business does. */
+      { icon: 'doc',     title: 'We walk you through the subsidy application', highlight: true,
+        text: 'The subsidy is paid directly into your bank account, so the application has to be yours. We show you exactly what to do at each stage — portal registration, the discom application, feasibility, net meter and commissioning — and check your details before you submit. No charge for the guidance.' },
 
       { icon: 'shield',  title: '5 years of maintenance included',
         text: 'Performance checks and service visits for the first five years, as required under MNRE quality standards for rooftop solar. Ours is written into the quotation so you can hold us to it.' },
@@ -232,7 +236,8 @@ const SITE = {
            is connected to this business — it does not. */
         line: 'Ardhendu spent thirty-five years in electricals and sales, most of that career with ' +
               'Havells, before retiring. He co-owns Bright Solar Engineering and leads the ' +
-              'commercial side — pricing, quotations and the subsidy paperwork.',
+              'commercial side — pricing, quotations, and guiding customers through their subsidy ' +
+              'application.',
         phone: '+91 99370 82488' },
 
       /* ---- SECOND PARTNER ----
