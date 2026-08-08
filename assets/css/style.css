@@ -691,6 +691,31 @@ input[type=range]::-moz-range-thumb { width: 22px; height: 22px; border: none; b
 }
 /* No quote supplied — drop the signature rule so it doesn't float */
 .person__sig--bare { border-top: none; padding-top: 0; margin-top: 0; }
+
+.person__phone {
+  display: inline-flex; align-items: center; gap: .45rem;
+  margin-top: 1rem; font-weight: 650; font-size: .95rem;
+  color: var(--gold-600);
+}
+.person__phone:hover { text-decoration: underline; }
+
+/* ---- Two or more partners ----
+   The single-person layout is a wide signed statement. That does not
+   work for a pair: side by side, whoever is second reads as staff
+   rather than an equal owner. So with more than one, switch to two
+   matched vertical cards. renderTeam() adds .people--pair. */
+.people--pair { grid-template-columns: 1fr; align-items: start; gap: 1.5rem; }
+.people--pair .person {
+  grid-template-columns: 1fr; justify-items: center; text-align: center;
+  max-width: none; margin-inline: 0; gap: 1.35rem; padding: 2.5rem 1.9rem;
+}
+.people--pair .person__shot { width: 176px; height: 176px; }
+.people--pair .person__quote { font-size: 1.02rem; }
+.people--pair .person__quote::before { display: none; }
+.people--pair .person__sig { justify-content: center; }
+@media (min-width: 880px) {
+  .people--pair { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
 .person__name { font-family: var(--font-display); font-weight: 750; font-size: 1.12rem; margin: 0; }
 .person__role { font-size: .88rem; font-weight: 600; color: var(--gold-600); letter-spacing: .02em; }
 .person__role::before { content: "— "; }

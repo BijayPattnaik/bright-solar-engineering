@@ -283,6 +283,10 @@
     }
 
     const esc = (s) => (s || '').replace(/"/g, '&quot;');
+    // One partner reads best as a wide signed statement; two or more must
+    // be shown as equal cards, or the second looks like an afterthought.
+    root.classList.toggle('people--pair', items.length > 1);
+
     root.innerHTML = items.map(p => `
       <figure class="person">
         <div class="person__shot">
@@ -296,13 +300,21 @@
             ${p.role ? `<span class="person__role">${p.role}</span>` : ''}
           </div>
           ${p.line ? `<p class="person__line">${p.line}</p>` : ''}
+          ${p.phone ? `<a class="person__phone" href="tel:${esc(p.phone).replace(/[^\d+]/g, '')}">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor"
+                   stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>
+              ${p.phone}</a>` : ''}
         </figcaption>
       </figure>`).join('');
 
     const drop = (img) => {
       const fig = img.closest('.person');
       if (fig) fig.remove();
-      if (!$$('.person', root).length) section.style.display = 'none';
+      const left = $$('.person', root).length;
+      // Re-check the layout: if a portrait 404s we may be back to one
+      // partner, which wants the wide single treatment, not a lone card.
+      root.classList.toggle('people--pair', left > 1);
+      if (!left) section.style.display = 'none';
     };
     $$('img', root).forEach(img => {
       img.addEventListener('error', () => drop(img));

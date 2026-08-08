@@ -224,15 +224,40 @@ const SITE = {
            It is deliberately about PRICING AND ADVICE, not about
            service call-outs, because that is the part of the business
            you personally answer for. Keep it that way. */
-        quote: 'I spent thirty years in the electrical trade before I sold my first solar panel. ' +
-               'It taught me that the cheapest quotation is very rarely the cheapest system.',
+        quote: 'I spent thirty-five years in the electrical trade before I sold my first solar ' +
+               'panel. It taught me that the cheapest quotation is very rarely the cheapest system.',
 
         /* Naming a former employer is a statement of fact about his career.
            Keep it worded so it never suggests Havells endorses, supplies or
            is connected to this business — it does not. */
-        line: 'Ardhendu spent more than thirty years in electricals and sales, most of that career ' +
-              'with Havells, before retiring. He co-owns Bright Solar Engineering and leads the ' +
-              'commercial side; his survey and installation team handles the work on site.' },
+        line: 'Ardhendu spent thirty-five years in electricals and sales, most of that career with ' +
+              'Havells, before retiring. He co-owns Bright Solar Engineering and leads the ' +
+              'commercial side — pricing, quotations and the subsidy paperwork.',
+        phone: '+91 99370 82488' },
+
+      /* ---- SECOND PARTNER ----
+         PHOTO STILL NEEDED. Save it as  assets/img/team/subhendu-pattnaik.jpg
+         and this card appears. Until then only Ardhendu shows — the
+         renderer drops any portrait whose file is missing.
+
+         The quote below is drafted from his actual career — forty-five
+         years selling and servicing vehicles — and deliberately covers
+         AFTER-SALES, because that is the part of this business he runs.
+         It is still printed in the first person over his face, so read
+         it to him and change any word he would not say himself.        */
+      { src: 'assets/img/team/subhendu-pattnaik.jpg',
+        alt: 'Subhendu Pattnaik, Partner at Bright Solar Engineering',
+        name: 'Subhendu Pattnaik',
+        role: 'Partner & Head of Operations',
+        focus: '50% 50%',
+        quote: 'Forty-five years in automobile sales taught me that the sale is the easy part. ' +
+               'What decides whether a customer comes back is the service in the years afterwards. ' +
+               'Solar is no different.',
+
+        line: 'Subhendu spent forty-five years in automobile sales, retiring as a General Manager ' +
+              'with Mahindra. He runs the day-to-day side of the business — the team, the ' +
+              'operations, and looking after customers once a system is in.',
+        phone: '+91 99386 78255' },
     ]
   },
 

@@ -27,6 +27,27 @@ Until you add one, the whole section stays hidden - visitors never
 see an empty space or a broken image.
 
 
+TWO PARTNERS - THE PHOTOS MUST MATCH
+------------------------------------
+There are two cards now, side by side:
+
+  ardhendu-pattnaik.jpg   (already in place)
+  subhendu-pattnaik.jpg   (STILL NEEDED)
+
+Because they sit next to each other, they have to be shot the same
+way or the pair looks wrong. Both should be HEAD AND SHOULDERS, from
+roughly the same distance, facing the camera.
+
+A full-length photo will NOT work here. The site crops to a small
+circle, so cropping a face out of a standing shot leaves a soft,
+low-resolution head next to a sharp one. If the only photo you have
+is full-length, take a new close one - it is thirty seconds and the
+difference is obvious.
+
+Until subhendu-pattnaik.jpg exists, only Ardhendu's card shows and
+the layout returns to the single wide version. Nothing breaks.
+
+
 BEST RESULT: CROP IT SQUARE FIRST
 ---------------------------------
 The site crops your photo to a circle. If the original is a full
