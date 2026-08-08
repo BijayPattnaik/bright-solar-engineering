@@ -692,12 +692,20 @@ input[type=range]::-moz-range-thumb { width: 22px; height: 22px; border: none; b
 /* No quote supplied — drop the signature rule so it doesn't float */
 .person__sig--bare { border-top: none; padding-top: 0; margin-top: 0; }
 
+/* Sized as a real tap target: at 25px tall this was under the 44px
+   touch guideline, on the one link whose whole job is to get a
+   customer to ring the partner. */
 .person__phone {
-  display: inline-flex; align-items: center; gap: .45rem;
-  margin-top: 1rem; font-weight: 650; font-size: .95rem;
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  margin-top: 1rem; min-height: 44px; padding: .5rem 1.1rem;
+  font-weight: 650; font-size: .95rem;
   color: var(--gold-600);
+  background: rgba(247,179,43,.12);
+  border: 1px solid rgba(197,81,42,.22);
+  border-radius: 999px;
+  transition: background .2s, border-color .2s;
 }
-.person__phone:hover { text-decoration: underline; }
+.person__phone:hover { background: rgba(247,179,43,.2); border-color: rgba(197,81,42,.4); }
 
 /* ---- Two or more partners ----
    The single-person layout is a wide signed statement. That does not
